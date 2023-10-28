@@ -1,0 +1,150 @@
+* {
+  font-family: Arial, sans-serif;
+}
+.main {
+  overflow: auto;
+  max-width: 1118px;
+  flex-grow: 1;
+  height: 100%;
+  color: #fff;
+  background-image: url("../images/background-of-medical-f59.arb.jpg");
+  background-size: cover;
+}
+.main__header {
+}
+.header {
+  position: sticky;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 10;
+  z-index: 1;
+}
+.header__doctor {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.header__image {
+  border-radius: 50%;
+  overflow: hidden;
+  line-height: 0;
+}
+.header__info {
+}
+.header__name {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.header__description {
+  font-size: 14px;
+  line-height: 18px;
+}
+.header__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.header__logo img {
+}
+.header__status {
+  font-size: 14px;
+}
+.header__status span {
+  position: relative;
+  padding-left: 15px;
+}
+.header__status span::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 11px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+  background-color: #54a22c;
+}
+
+.main__content {
+  padding: 20px 0 20px;
+}
+.chat__date {
+  margin: 15px auto 0;
+  text-align: center;
+}
+.chat__date p {
+  padding: 7px 0;
+  width: 97px;
+  font-size: 14px;
+  line-height: 18px;
+  background: #54a22c;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.main__btn {
+}
+.btn-up {
+  position: fixed;
+  right: 40px;
+  bottom: 20%;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  background: #fff;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.btn-up span {
+  width: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  height: 20px;
+  display: block;
+  background: 0 0;
+  border: 2px solid #54a22c;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-up span::before {
+  content: "";
+  border: solid #54a22c;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(-135deg);
+}
+@media (max-width: 1023px) {
+  .header__logo {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 425px) {
+  .chat {
+    overflow-x: hidden;
+  }
+  .header {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
